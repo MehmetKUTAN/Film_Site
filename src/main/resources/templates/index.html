@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>MainPage</title>
+	<style>
+	A:link { color:#F00; text-decoration:none; font-family:arial}
+	A:visited { color:#0032ff}
+	A:hover { color:#F00; font-size:12pt}
+	A:active { color:#F00}
+
+</style>
+</head>
+<body style="background-color: lightblue;">
+<!----- Navbar content-->
+<header>
+	<div class="logo" id="logo">
+		<button class="image">
+			<a href="/">
+			<img src="https://images.hive.blog/p/2gsjgna1uruvUuS7ndh9YqVwYGPLVszbFLwwpAYXZpQMp4H55DdCbEbLqj8caigJUuReYJy7oDQUaj3WgHjEgTcRh7kPMpdeeSVxgYTDohpQAnSMP3?format=match&mode=fit" class="img-thumbnail"></a></button>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+		<div class="navbar" id="navbar">
+			<div class="logo">
+				<ul class="navbar-nav ">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Watch Movie</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" name="Category" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Category
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item"  name="Action" href="#">Action</a></li>
+							<li><a class="dropdown-item" name="Comedy" href="#">Comedy</a></li>
+							<li><a class="dropdown-item" name="Romantic" href="#">Romantic</a></li>
+							<li><a class="dropdown-item" name="War" href="#">War</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contect us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="search" id="search" >
+            <form class="d-flex justify-content-end">
+                <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+			</div>
+			<div class="login" id="Login">
+			<form class="d-flex justify-content-end">
+				<a class="dropdown-item"  name="Action" href="/login.html">Login</a>
+			</form></div>
+			<div class="Register" id="Register">
+				<form class="d-flex justify-content-end">
+					<a class="dropdown-item"  name="Action" href="/register.html">Register</a>
+				</form></div>
+		</div>
+	</nav>
+
+</header>
+<!-- Navbar end -->
+<!-- Slider -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner" id="slider">
+		<div class="carousel-item active" >
+			<img src="https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-efsane-legend-film-izle.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption" id="about_card_text">
+				<h5>First slide label</h5>
+				<p>Some representative placeholder content for the first slide.</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-efsane-legend-film-izle.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Second slide label</h5>
+				<p>Some representative placeholder content for the second slide.</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-efsane-legend-film-izle.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Third slide label</h5>
+				<p>Some representative placeholder content for the third slide.</p>
+			</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div>
+<br>
+
+
+<!-- Movie Card -->
+<div class="container-fluid">
+	<div class="card1" style="width: 18rem;" id="card1">
+		<img src="https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-efsane-legend-film-izle.jpg" class="img-thumbnail" alt="..." width="150px" height="150px">
+		<div class="card-body">
+			<h5 class="card-title">EFSANE</h5>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		</div>
+		<ul class="About_Movie">
+			<li class="Categori">Action</li>
+			<li class="year_of_publication">Year of publication:2018</li>
+			<li class="Media">Media: Action_Media</li>
+			<li class="Language_choose">Language:Turkish</li>
+		</ul>
+		<div class="card-body">
+			<a href="#" class="card-link">Watch</a>
+			<a href="#" class="card-link">players</a>
+		</div>
+	</div>
+
+	<div class="card2" style="width: 18rem;" id="card2">
+		<img src="https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-efsane-legend-film-izle.jpg" class="img-thumbnail" alt="..." width="150px" height="150px">
+		<div class="card-body">
+			<h5 class="card-title">EFSANE</h5>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		</div>
+		<ul class="About_Movie">
+			<li class="Categori">Action</li>
+			<li class="year_of_publication">Year of publication:2018</li>
+			<li class="Media">Media: Action_Media</li>
+			<li class="Language_choose">Language:Turkish</li>
+		</ul>
+		<div class="card-body">
+			<a href="#" class="card-link">Watch</a>
+			<a href="#" class="card-link">players</a>
+		</div>
+	</div>
+
+	<div class="card3" style="width: 18rem;" id="card3">
+		<img src="https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-efsane-legend-film-izle.jpg" class="img-thumbnail" alt="..." width="150px" height="150px">
+		<div class="card-body">
+			<h5 class="card-title">EFSANE</h5>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		</div>
+		<ul class="About_Movie">
+			<li class="Categori">Action</li>
+			<li class="year_of_publication">Year of publication:2018</li>
+			<li class="Media">Media: Action_Media</li>
+			<li class="Language_choose">Language:Turkish</li>
+		</ul>
+		<div class="card-body">
+			<a href="#" class="card-link">Watch</a>
+			<a href="#" class="card-link">players</a>
+		</div>
+	</div>
+
+	<div class="card4" style="width: 18rem;" id="card4">
+		<img src="https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-efsane-legend-film-izle.jpg" class="img-thumbnail" alt="..." width="150px" height="150px">
+		<div class="card-body">
+			<h5 class="card-title">EFSANE</h5>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		</div>
+		<ul class="About_Movie">
+			<li class="Categori">Action</li>
+			<li class="year_of_publication">Year of publication:2018</li>
+			<li class="Media">Media: Action_Media</li>
+			<li class="Language_choose">Language:Turkish</li>
+		</ul>
+		<div class="card-body">
+			<a href="#" class="card-link">Watch</a>
+			<a href="#" class="card-link">players</a>
+		</div>
+	</div>
+</div>
+
+<br>
+<!--- Bottombar -->
+<div class="line"></div>
+
+
+<button type="button" class="btn btn-primary position-relative" id="contact">
+	E-mail <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+</button>
+
+<ul class="SocialMedia position-relative" id="SocialMedia">
+	<button type="button" class="btn btn-primary position-relative" id="Tweeter">
+	<img src="https://icon-library.com/images/tweeter-icon/tweeter-icon-5.jpg" width="25px" height="25px">
+	</button>
+	<button type="button" class="btn btn-primary position-relative" id="Facebook">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/256px-Facebook_icon.svg.png" width="25px" height="25px">
+	</button>
+		<button type="button" class="btn btn-primary position-relative" id="instagram">
+	<img src="https://i.pinimg.com/736x/c8/95/2d/c8952d6e421a83d298a219edee783167.jpg" width="25px" height="25px">
+	</button>
+	</ul>
+
+<br>
+<div class="about_site" id="about_site">
+	<h5 class="card-title">About Site</h5>
+	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
